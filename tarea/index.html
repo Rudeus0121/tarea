@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria DEV.F</title>
+</head>
+<body>
+    <h1>
+        Pizzeria de DEV.F 
+    </h1>
+    <p><h4>La pizzeria que te va a dejar a cualquiera hora del dia, tu pizza favorita</h4></p>
+        <form>
+             <label> 
+                Ingresa tu nombre
+                <br>
+                <input 
+                type="text"
+                name="nombre"
+                placeholder="Su nombre"
+                maxlength="10"
+                minlength="2"
+                required
+                />
+            </label>  
+            <br>
+            <br>
+            <form action="/action_page.php">
+                <label for="email">Agrege su email:</label>
+               <br> 
+                <input type="email" id="email" name="email" placeholder="alguien@gmail.com" required>
+            </form>
+            <br>
+            <br>
+            <form action="/action_page.php">
+                <label for="phone">Agrege su numero de telefono:</label><br>
+                <input type="tel" id="phone" name="phone" 
+                    placeholder="+56 9 3467 7890" pattern="[0-9]{2}-[0-9]{1}-[0-9]{4}-[0-9]{4}"required/>
+            </form>
+            <br>
+            <br>
+            <label>
+                Agrege su Ubicacion
+                <br>
+                <input 
+                type="street-address"
+                name="Ubicacion"
+                placeholder="Los robles 457"
+                required
+                />
+            </label>
+            <br>
+            <br>
+            <h3>Ingresa tu tipo de Pizza</h3>
+            <label>
+                Pizza Napolitana
+                <input
+                    type="radio"
+                    name="Pizza"
+                    value="1"
+                />
+            <br>
+            <img src="pizzas\images\napolitana.jpg">
+            </label>
+            <br>
+            <label>
+                Pizza de Pepperoni
+                <input
+                type="radio"
+                name="Pizza"
+                value="2"
+                />
+            <br>
+            <img src="pizzas\images\peperoni.jpg">
+            </label>
+            <br>
+            <label>
+               Pizza Vegana
+                <input
+                type="radio"
+                name="Pizza"
+                value="3"
+                />
+            <br>
+            <img src="pizzas\images\vegana.jpg">
+            </label>
+            <br>
+            <label>
+                Pizza de 4 Quesos
+                <input
+                type="radio"
+                name="Pizza"
+                value="4"
+                />
+            <br>
+            <img src="pizzas\images\quesos.jpg">
+            </label>
+            <br>
+            <br>
+            <form action="/action_page.php">
+                <label for="quantity">Cantidad de pizzas (eligue entre 1 y 10):</label>
+                <br>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
+              </form>
+            </select>
+           <br> 
+        <h3>
+            Seleccione la hora de llegada de tu pedido
+        </h3>
+           <form action="/action_page.php">
+            <label>Puede aver un retraso de 15 minutos en tu pedido:
+            <br>
+            <input type="time"name="appt">
+            </label>
+          </form>
+          <br>
+          <br>
+            <button type="submit">
+                Enviar
+            </button>
+        </form>
+</body>
+</html>
